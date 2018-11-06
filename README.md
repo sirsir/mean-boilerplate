@@ -1,3 +1,3 @@
 # mean-boilerplate
 pug+bootstrap+sass
-<<copied from somewhere>>
+<copied from somewhere>
