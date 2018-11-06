@@ -1,0 +1,178 @@
+extends layout
+
+//- append stylesheets
+//-   //- link(rel='stylesheet', href='/stylesheets/style2.css')
+//-   link(rel='stylesheet', href='/stylesheets/'+_filename+'.css')
+    
+block content
+  .jumbotron.jumbotron-fluid
+    .container
+      h1.display-4 FAQ Questions Engine Setting
+      p.lead
+        | This is a manual to set FAQ Question Engine.
+  .container-fluid
+    .row
+      .col-sm-4
+        .vertical_progress
+          .step
+            .node            
+            .detail
+              | Goto setup page
+          .step
+            .link_block
+              .link
+          .step
+            .node            
+            .detail
+              | Create New or<br/>Edit existing question
+          .step
+            .link_block
+              .link
+          .step
+            .node            
+            .detail
+              | Edit FAQ question
+          .step
+            .link_block
+              .link
+          .step
+            .node            
+            .detail
+              | Fill question pattern
+          .step
+            .link_block
+              .link
+          .step
+            .node            
+            .detail
+              | Fill recommend answer
+          .step
+            .link_block
+              .link
+          .step
+            .node            
+            .detail
+              | Save settin and Build Engine
+      .col-sm-8
+        .container-fluid
+          #accordion(role='tablist')
+            .card
+              #headingOne.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse', href='#collapseOne', role='button', aria-expanded='true', aria-controls='collapseOne')
+                    | Goto setup page
+              #collapseOne.collapse.show(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+                .card-body
+                  | Visit 
+                  a(href='http://192.168.1.88:3002/faq_questions')
+                    | http://192.168.1.88:3002/faq_questions
+            .card
+              #headingTwo.card-header(role='tab')
+                h5.mb-0
+                  a.collapsed(data-toggle='collapse', href='#collapseTwo', role='button', aria-expanded='false', aria-controls='collapseTwo')
+                    | Find for question name
+              #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+                .card-body
+                  | Enter keyword in search box.
+            .card
+              #headingThree.card-header(role='tab')
+                h5.mb-0
+                  a.collapsed(data-toggle='collapse', href='#collapseThree', role='button', aria-expanded='false', aria-controls='collapseThree')
+                    | Edit corresponding engine
+              #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+                .card-body
+                  | Click 'Fine Tune'
+            
+
+  //- .container-fluid
+  //-   .row
+  //-     .col-sm-4
+  //-       .container-fluid
+  //-         .row.step
+  //-           .col-sm-2
+  //-             .node
+  //-           .col-sm-10
+  //-             .detail
+  //-               | Goto setup page
+  //-         .row.step
+  //-           .col-sm-2
+  //-             .node
+  //-           .col-sm-10
+  //-             .detail
+  //-               | Create New or<br/>Edit existing question
+  //-         .row.step
+  //-           .col-sm-2
+  //-             .node
+  //-           .col-sm-10
+  //-             .detail
+  //-               | Edit FAQ question
+  //-         .row.step
+  //-           .col-sm-2
+  //-             .node
+  //-           .col-sm-10
+  //-             .detail
+  //-               | Fill question pattern
+  //-         .row.step
+  //-           .col-sm-2
+  //-             .node
+  //-           .col-sm-10
+  //-             .detail
+  //-               | Fill recommend answer
+  //- 
+  //-     .col-sm-8
+  //-       .container-fluid
+  //-         #accordion(role='tablist')
+  //-           .card
+  //-             #headingOne.card-header(role='tab')
+  //-               h5.mb-0
+  //-                 a(data-toggle='collapse', href='#collapseOne', role='button', aria-expanded='true', aria-controls='collapseOne')
+  //-                   | Goto setup page
+  //-             #collapseOne.collapse.show(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+  //-               .card-body
+  //-                 | Visit 
+  //-                 a(href='http://192.168.1.88:3002/faq_questions')
+  //-                   | http://192.168.1.88:3002/faq_questions
+  //-           .card
+  //-             #headingTwo.card-header(role='tab')
+  //-               h5.mb-0
+  //-                 a.collapsed(data-toggle='collapse', href='#collapseTwo', role='button', aria-expanded='false', aria-controls='collapseTwo')
+  //-                   | Find for question name
+  //-             #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+  //-               .card-body
+  //-                 | Enter keyword in search box.
+  //-           .card
+  //-             #headingThree.card-header(role='tab')
+  //-               h5.mb-0
+  //-                 a.collapsed(data-toggle='collapse', href='#collapseThree', role='button', aria-expanded='false', aria-controls='collapseThree')
+  //-                   | Edit corresponding engine
+  //-             #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+  //-               .card-body
+  //-                 | Click 'Fine Tune'
+
+  //- nav#navbar-example3.navbar.navbar-light.bg-light
+  //-   a.navbar-brand(href='#') Navbar
+  //-   nav.nav.nav-pills.flex-column
+  //-     a.nav-link(href='#item-1') Item 1
+  //-     nav.nav.nav-pills.flex-column
+  //-       a.nav-link.ml-3.my-1(href='#item-1-1') Item 1-1
+  //-       a.nav-link.ml-3.my-1(href='#item-1-2') Item 1-2
+  //-     a.nav-link(href='#item-2') Item2
+  //-     a.nav-link(href='#item-3') Item3
+  //-     nav.nav.nav-pills.flex-column
+  //-       a.nav-link.ml-3.my-1(href='#item-3-1') Item 3-1
+  //-       a.nav-link.ml-3.my-1(href='#item-3-2') Item 3-2
+  //- div(data-spy='scroll', data-target='#navbar-example3', data-offset='0')
+  //-   h4#item-1 Item 1
+  //-   p ...
+  //-   h5#item-1-1 Item 1-1
+  //-   p ...
+  //-   h5#item-1-2 Item 2-2
+  //-   p ...
+  //-   h4#item-2 Item 2
+  //-   p ...
+  //-   h4#item-3 Item 3
+  //-   p ...
+  //-   h5#item-3-1 Item 3-1
+  //-   p ...
+  //-   h5#item-3-2 Item 3-2
+  //-   p ...

@@ -1,0 +1,114 @@
+// body
+//   padding: 50px
+//   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+//
+// a
+//   color: #00B7FF
+$step-sep: 4em;
+$node-size: 3em;
+$linkWidth: 4px;
+
+
+.vertical_progress
+  display: table;
+
+  .step
+    display: table-row;
+    .node,.detail,.link
+      display: table-cell;
+
+  .node
+    display: table-cell;
+    float: right !important;
+    height: $node-size;
+    width: $node-size;
+    background: springgreen;
+    border-radius: $node-size;
+    // margin-top: 2em;
+    position: relative;
+
+
+  .detail
+    vertical-align: middle;
+    padding: 0 0 0 2em;
+    // padding-top: $node-size/3;
+
+  .link_block
+    content: '';
+    /* border-left: 16px solid #333; */
+    /* border-top: 16px solid transparent; */
+    /* border-bottom: 16px solid transparent; */
+    position: relative;
+    text-align: -webkit-center;
+    // top: -$step-sep;
+    // left: 50%;
+    // z-index: 20;
+    height: $step-sep;
+    .link
+      // position: absolute;
+      // left: 50%;
+      // margin-left: -$linkWidth/2;
+      width: $linkWidth;
+      height: $step-sep;
+      background: springgreen;
+      border-radius: 2em;
+      padding-bottom: 2em;
+
+  //     content: '';
+  //     /* border-left: 16px solid #333; */
+  //     /* border-top: 16px solid transparent; */
+  //     /* border-bottom: 16px solid transparent; */
+  //     position: absolute;
+  //     top: -$step-sep;
+  //     left: 50%;
+  //     z-index: 20;
+  //     height: $step-sep;
+  //     width: 2px;
+  //     background: springgreen;
+  //     border-radius: 2em;
+  //     padding-bottom: 2em;
+
+
+// .step
+//   .node
+//     float: right !important;
+//     height: $node-size;
+//     width: $node-size;
+//     background: springgreen;
+//     border-radius: $node-size;
+//     // margin-top: 2em;
+//     position: relative;
+//   .detail
+//     padding-top: $node-size/3;
+
+
+
+
+
+// .step:nth-child(n+2)
+//   // margin-bottom: 2em;
+//
+//   .detail
+//     padding-top: $node-size/3 + $step-sep - $node-size +1em;
+//
+//   .node
+//     height: $node-size;
+//     width: $node-size;
+//     background: springgreen;
+//     border-radius: 2em;
+//     margin-top: 2em;
+//     position: relative;
+//   .node::before
+//     content: '';
+//     /* border-left: 16px solid #333; */
+//     /* border-top: 16px solid transparent; */
+//     /* border-bottom: 16px solid transparent; */
+//     position: absolute;
+//     top: -$step-sep;
+//     left: 50%;
+//     z-index: 20;
+//     height: $step-sep;
+//     width: 2px;
+//     background: springgreen;
+//     border-radius: 2em;
+//     padding-bottom: 2em;

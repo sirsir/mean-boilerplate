@@ -1,0 +1,33 @@
+.vertical_progress {
+  display: table; }
+  .vertical_progress .step {
+    display: table-row; }
+    .vertical_progress .step .node, .vertical_progress .step .detail, .vertical_progress .step .link {
+      display: table-cell; }
+  .vertical_progress .node {
+    display: table-cell;
+    float: right !important;
+    height: 3em;
+    width: 3em;
+    background: springgreen;
+    border-radius: 3em;
+    position: relative; }
+  .vertical_progress .detail {
+    vertical-align: middle;
+    padding: 0 0 0 2em; }
+  .vertical_progress .link_block {
+    content: '';
+    /* border-left: 16px solid #333; */
+    /* border-top: 16px solid transparent; */
+    /* border-bottom: 16px solid transparent; */
+    position: relative;
+    text-align: -webkit-center;
+    height: 4em; }
+    .vertical_progress .link_block .link {
+      width: 4px;
+      height: 4em;
+      background: springgreen;
+      border-radius: 2em;
+      padding-bottom: 2em; }
+
+/*# sourceMappingURL=reccommend_engine_setup.css.map */
